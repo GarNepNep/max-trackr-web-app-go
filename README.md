@@ -14,9 +14,10 @@ docker build -t bigsnorts/maxtrackr:<version.number> .
 ```
 to then run it use
 ```bash
-# docker run -p address:hostMachinePort:containerPort bigsnorts/maxtrackr:<version.number
+# docker run -p address:hostMachinePort:containerPort bigsnorts/maxtrackr:<version.number>
+# this mapps localhost:80 to the docker port 5000
 # IE
-docker run -p 127.0.0.1:80:5000 bigsnorts/maxtrackr:0.1
+docker run -p 80:5000 bigsnorts/maxtrackr:0.1
 ```
 
 ## trouble shooting
